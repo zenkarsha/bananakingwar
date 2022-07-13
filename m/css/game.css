@@ -1,0 +1,14 @@
+#game {
+	width:800px;
+	height: 500px;
+	margin:0 auto;
+}
+#canvasBg {
+	display:block;
+	background:#FFF;
+	margin-top: 20px;
+}	
+#canvasJet, #canvasEnemy, #canvasHUD{
+	display:block;
+	margin:-500px auto 0px;
+}

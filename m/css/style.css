@@ -1,0 +1,158 @@
+/* CSS Document */
+
+body {
+	background:url(../img/background.png);
+	position:relative;
+}
+html, button, input, select, textarea {
+	font-family: LiHei Pro,Microsoft JhengHei,Microsoft Yahei,MingLiU,sans-serif;
+    font-weight: 400;
+    color: #555;
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiasebtnSubmitd;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+header,
+footer {
+	width: 100%;
+	text-align:center;
+}
+	header {
+		min-height: 100px;
+	}
+	footer {
+		min-height:60px;
+		font-size: 12px;
+		line-height:18px;
+		color: #777;
+		position:relative;
+		margin-top:10px;
+	}
+		.btmborder {
+			width:100%; height:40px; margin-top:20px;
+			background:url(../img/btmborder.png) repeat-x;
+		}
+	
+.content {
+	width:100%;
+	min-height:200px;
+	text-align:center;
+	position: relative;
+}
+	.dragon-left {
+		position:fixed; z-index:-999;
+		top: 20%; left: 0%;
+		background:url(../img/dragon-left.png) no-repeat;
+		width:250px; height:201px;
+	}
+	.dragon-right {
+		position:fixed; z-index:-999;
+		top: 20%; right: 0%;
+		background:url(../img/dragon-right.png) no-repeat;
+		width:250px; height:201px;
+	}
+	.centerbox {
+		position: relative;
+		height: 20px;
+		margin:0 auto;
+		width:800px;
+	}
+	.likebtn {
+		position:absolute;
+		bottom: 30px; left: 10px;
+		width:350px;
+		height:20px;
+		text-align:left;
+	}
+	.fbcomment{
+		position:relative;
+		width:350px;
+		text-align:center;
+		margin: auto auto;
+		margin-bottom: 80px;
+	}
+		.fbcomment h3 {
+			width: 144px;
+			height:37px;
+			display:block;
+			margin::0; padding:0;
+			font-size:1px;
+			text-indent:-9999px;
+			margin:auto auto;
+			background:url(../img/feedbacktitle.png) no-repeat;
+			margin-bottom:10px;
+			margin-top: 10px;
+		}
+.blink_me {
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 1s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+	@-moz-keyframes blinker {  
+	    0% { opacity: 1.0; }
+	    50% { opacity: 0.6; }
+	    100% { opacity: 1.0; }
+	}
+	@-webkit-keyframes blinker {  
+	    0% { opacity: 1.0; }
+	    50% { opacity: 0.6; }
+	    100% { opacity: 1.0; }
+	}
+	@keyframes blinker {  
+	    0% { opacity: 1.0; }
+	    50% { opacity: 0.6; }
+	    100% { opacity: 1.0; }
+	}
+
+.fanpage {
+	width:240px;
+	position:fixed;bottom:0px; left:0;z-index:93000;
+}
+
+.btc {
+	position:fixed;bottom:20px; right:20px;z-index:93000;
+}
+.btc a {
+	opacity: 0.8;
+}
+.btc a:hover {
+	opacity: 1.0;
+}
+
+@media only screen and (max-width: 1100px) {
+	.fanpage {
+		position: relative;
+		text-align: center;
+	}
+	.fanpage div {
+		margin:0 auto;
+		background: white;
+	}
+}
+@media only screen and (max-width: 760px) {
+	.dragon-left,
+	.dragon-right {
+		display:none; 
+	}
+	.btc {
+		position: relative;
+		text-align: center;
+		padding:40px 0 10px 0;
+		right:0;
+	}
+	.btc a {
+		margin:0 auto;
+	}
+}
